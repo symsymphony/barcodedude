@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Daftar Barcode Produk</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- JSBarcode CDN -->
+<script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.5/dist/JsBarcode.all.min.js"></script>
+
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+        background: #f7f7f7;
+    }
+    h1 {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+    .container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+        gap: 20px;
+    }
+    .card {
+        background: #ffffff;
+        padding: 15px;
+        border-radius: 12px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        text-align: center;
+    }
+    .name {
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .price {
+        font-size: 16px;
+        color: #444;
+        margin-bottom: 10px;
+    }
+    svg {
+        margin: auto;
+        display: block;
+    }
+    a {
+        display: block;
+        margin-top: 10px;
+        color: blue;
+        text-decoration: underline;
+        font-size: 13px;
+    }
+</style>
+</head>
+
+<body>
+
+<h1>Daftar Barcode Produk</h1>
+
+<div class="container">
+
+    <!-- 1 -->
+    <div class="card">
+        <div class="name">Talk-o Tempe</div>
+        <div class="price">Rp 30.000</div>
+        <svg id="bc001"></svg>
+        <a href="https://script.google.com/macros/s/AKfycbyjYS7hWSUqezJI1OpKwEtm7OoqDpN0ISAYx5P1fBdjJPXgrQmkZf_Ey3L1FyKiWYyB4w/exec?id=001" target="_blank">
+            Klik untuk test scan
+        </a>
+    </div>
+
+    <!-- 2 -->
+    <div class="card">
+        <div class="name">Kancil Crunch</div>
+        <div class="price">Rp 25.000</div>
+        <svg id="bc002"></svg>
+        <a href="https://script.google.com/macros/s/AKfycbyjYS7hWSUqezJI1OpKwEtm7OoqDpN0ISAYx5P1fBdjJPXgrQmkZf_Ey3L1FyKiWYyB4w/exec?id=002" target="_blank">Klik untuk test scan</a>
+    </div>
+
+    <!-- 3 -->
+    <div class="card">
+        <div class="name">Chonk It</div>
+        <div class="price">Rp 20.000</div>
+        <svg id="bc003"></svg>
+        <a href="https://script.google.com/macros/s/AKfycbyjYS7hWSUqezJI1OpKwEtm7OoqDpN0ISAYx5P1fBdjJPXgrQmkZf_Ey3L1FyKiWYyB4w/exec?id=003" target="_blank">Klik untuk test scan</a>
+    </div>
+
+    <!-- 4 -->
+    <div class="card">
+        <div class="name">Matcha Cih</div>
+        <div class="price">Rp 18.000</div>
+        <svg id="bc004"></svg>
+        <a href="https://script.google.com/macros/s/AKfycbyjYS7hWSUqezJI1OpKwEtm7OoqDpN0ISAYx5P1fBdjJPXgrQmkZf_Ey3L1FyKiWYyB4w/exec?id=004" target="_blank">Klik untuk test scan</a>
+    </div>
+
+    <!-- 5 -->
+    <div class="card">
+        <div class="name">Spill The Tea</div>
+        <div class="price">Rp 10.000</div>
+        <svg id="bc005"></svg>
+        <a href="https://script.google.com/macros/s/AKfycbyjYS7hWSUqezJI1OpKwEtm7OoqDpN0ISAYx5P1fBdjJPXgrQmkZf_Ey3L1FyKiWYyB4w/exec?id=005" target="_blank">Klik untuk test scan</a>
+    </div>
+
+    <!-- 6 -->
+    <div class="card">
+        <div class="name">Deers have ears</div>
+        <div class="price">Rp 10.000</div>
+        <svg id="bc006"></svg>
+        <a href="https://script.google.com/macros/s/AKfycbyjYS7hWSUqezJI1OpKwEtm7OoqDpN0ISAYx5P1fBdjJPXgrQmkZf_Ey3L1FyKiWYyB4w/exec?id=006" target="_blank">Klik untuk test scan</a>
+    </div>
+
+    <!-- 7 -->
+    <div class="card">
+        <div class="name">Bracelet Bowl</div>
+        <div class="price">Rp 5.000</div>
+        <svg id="bc007"></svg>
+        <a href="https://script.google.com/macros/s/AKfycbyjYS7hWSUqezJI1OpKwEtm7OoqDpN0ISAYx5P1fBdjJPXgrQmkZf_Ey3L1FyKiWYyB4w/exec?id=007" target="_blank">Klik untuk test scan</a>
+    </div>
+
+    <!-- 8 -->
+    <div class="card">
+        <div class="name">Mr & Mrs Kancil</div>
+        <div class="price">Rp 12.000</div>
+        <svg id="bc008"></svg>
+        <a href="https://script.google.com/macros/s/AKfycbyjYS7hWSUqezJI1OpKwEtm7OoqDpN0ISAYx5P1fBdjJPXgrQmkZf_Ey3L1FyKiWYyB4w/exec?id=008" target="_blank">Klik untuk test scan</a>
+    </div>
+
+    <!-- 9 -->
+    <div class="card">
+        <div class="name">Aromatic Kandle</div>
+        <div class="price">Rp 35.000</div>
+        <svg id="bc009"></svg>
+        <a href="https://script.google.com/macros/s/AKfycbyjYS7hWSUqezJI1OpKwEtm7OoqDpN0ISAYx5P1fBdjJPXgrQmkZf_Ey3L1FyKiWYyB4w/exec?id=009" target="_blank">Klik untuk test scan</a>
+    </div>
+
+    <!-- 10 -->
+    <div class="card">
+        <div class="name">Kancil's Harvest</div>
+        <div class="price">Rp 15.000</div>
+        <svg id="bc010"></svg>
+        <a href="https://script.google.com/macros/s/AKfycbyjYS7hWSUqezJI1OpKwEtm7OoqDpN0ISAYx5P1fBdjJPXgrQmkZf_Ey3L1FyKiWYyB4w/exec?id=010" target="_blank">Klik untuk test scan</a>
+    </div>
+
+</div>
+
+<script>
+    const baseURL = "https://script.google.com/macros/s/AKfycbyjYS7hWSUqezJI1OpKwEtm7OoqDpN0ISAYx5P1fBdjJPXgrQmkZf_Ey3L1FyKiWYyB4w/exec?id=";
+
+    const ids = ["001","002","003","004","005","006","007","008","009","010"];
+
+    ids.forEach(id => {
+        JsBarcode(`#bc${id}`, baseURL + id, {
+            format: "CODE128",
+            width: 2,
+            height: 70,
+            displayValue: true
+        });
+    });
+</script>
+
+</body>
+</html>
